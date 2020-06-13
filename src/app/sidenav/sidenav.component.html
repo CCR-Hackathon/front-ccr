@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow fixed-left">
+
+    <a class="navbar-brand" routerLink="/">
+      <img class="logo" src="../../assets/img/ccr-logo.png" alt="Amigo Caminhoneiro">
+    </a>
+  
+    <button class="navbar-toggler" type="button" (click)="toggle()" (blur)="collapse()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item" *ngFor="let item of menu">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="item.path">{{item.text}}</a>
+        </li>
+      </ul>
+    </div>
+  
+  </nav>
