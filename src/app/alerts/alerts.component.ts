@@ -28,8 +28,7 @@ export class AlertsComponent implements OnInit {
   }
 
   createMarker(lng:number, lat: number) {
-    var marker = new Mapboxgl.Marker({
-
+    const marker = new Mapboxgl.Marker({
       })
       .setLngLat([lng, lat])
       .addTo(this.mapa);
