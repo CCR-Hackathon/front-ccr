@@ -22,6 +22,7 @@
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
+    "mapbox-gl": "^1.11.0",
     "ngx-bootstrap": "^5.6.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
