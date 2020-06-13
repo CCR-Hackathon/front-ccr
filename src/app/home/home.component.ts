@@ -8,7 +8,10 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+
+  msgPortal = ' Bem-vindo ao portal Meu amigo caminhoneiro!'
+  descriptionPortal = 'Aqui você poderá receber alertas, obter dados e se comunicar com as rodovias CCR'
+  descriptionConfluence = 'Acesse o tutorial de utilização do portal!'
   version = environment.version
 
   constructor() { }
