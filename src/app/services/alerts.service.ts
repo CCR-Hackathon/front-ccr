@@ -10,9 +10,6 @@ export class AlertService {
 
     constructor(private http: HttpClient) {
     }
-    // getLocation(): Observable<GeoLocation[]> {
-    //      return this.http.get<GeoLocation[]>(this.url + '/getCoord').pipe()
-    //   }
 
     getLocation(): Observable<GeoLocation[]> {
         return new Observable<GeoLocation[]>(observer => {
