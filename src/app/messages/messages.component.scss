@@ -20,3 +20,11 @@ button.btn.btn-primary.btn-lg {
     border-color: #A02407;;
 }
 
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 60px;
+}

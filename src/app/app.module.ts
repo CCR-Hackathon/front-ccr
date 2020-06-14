@@ -9,6 +9,8 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AlertService } from './services/alerts.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
+import { MessageService } from './services/message.service';
 
 
 @NgModule({
@@ -22,9 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [AlertService],
+  providers: [AlertService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

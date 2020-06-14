@@ -28,6 +28,16 @@
       </div>
     </div>
   </div>
+<form>
+  <div class="form-group">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Texto mensagem</span>
+        </div>
+        <textarea class="form-control" id="textSms" aria-label="with textarea" name="message" [(ngModel)]="message"></textarea>
+    </div>
+    
+</div>
+<button type="submit" (click)="submit()" class="btn btn-secondary btn-lg">Enviar mensagem</button>
 
-<button type="button" class="btn btn-primary btn-btn-danger btn-btn-primary btn-lg">Ver mensagens</button>
-<button type="button" class="btn btn-secondary btn-lg">Enviar mensagem</button>
+</form>
