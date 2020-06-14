@@ -23,7 +23,7 @@ export class SidenavComponent implements OnInit {
             text: 'Alertas'
           },
           {
-            path: 'message',
+            path: 'messages',
             text: 'Mensagens'
           },
           /**{
