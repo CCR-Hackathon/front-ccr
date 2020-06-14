@@ -21,6 +21,7 @@ export class AlertsComponent implements OnInit {
     this.alertService.getLocation().subscribe(
         data => {
           this.coords = data;
+          console.log(data)
         },
         error => this.errorMsg = error
       ); 
