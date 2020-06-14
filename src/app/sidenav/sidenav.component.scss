@@ -4,8 +4,41 @@ $navbar-sidebar-width: 232px;
 $navbar-sidebar-breakpoint: 'md';
 
 .logo {
-    height: 100px !important;
+    float: left;
+    height: 60px !important;
+    padding: 0 10px 0 0;
 }
+.logo-crr{
+    height: 100px !important;
+    position: absolute;
+    top: 350px;
+    right: 80px;
+}
+.real-time{
+    height: 36px !important;
+    position: absolute;
+    top: 460px;
+    right: 1px;
+}
+.list{
+    height: 179px !important;
+    position: absolute;
+    top: 515px;
+    right: 15px;
+}
+.config{
+    height: 36px !important;
+    position: absolute;
+    top: 715px;
+    right: 15px;
+}
+
+.version { 
+    height: 48px;
+    color: #7f7f7f;
+    text-align: center;
+    font-size: 12px;
+} 
 @mixin navbar-sidebar {
     position: fixed;
     top: 0;
