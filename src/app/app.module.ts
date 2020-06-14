@@ -7,6 +7,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AlertService } from './services/alerts.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +21,10 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

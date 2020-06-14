@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {environment} from '../../environments/environment'
 
 import * as Mapboxgl from 'mapbox-gl';
+import { AlertService } from '../services/alerts.service';
 
 @Component({
   selector: 'app-alerts',
@@ -10,9 +11,20 @@ import * as Mapboxgl from 'mapbox-gl';
 })
 export class AlertsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alertService: AlertService) { }
 
-  ngOnInit() {
+  coords = []
+  errorMsg: string;
+
+  ngOnInit() { 
+
+    this.alertService.getLocation().subscribe(
+        data => {
+          this.coords = data;
+        },
+        error => this.errorMsg = error
+      ); 
+
     var mapa: Mapboxgl.Map;
     
     Mapboxgl.accessToken = environment.mapBoxKey;
