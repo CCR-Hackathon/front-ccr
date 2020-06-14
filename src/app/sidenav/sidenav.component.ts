@@ -15,10 +15,6 @@ export class SidenavComponent implements OnInit {
             text: 'Home'
           },
           {
-            path: 'info',
-            text: 'Informações'
-          },
-          {
             path: 'alerts',
             text: 'Alertas'
           },
