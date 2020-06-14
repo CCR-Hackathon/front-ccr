@@ -19,7 +19,7 @@ export class AlertsComponent implements OnInit {
 
     mapa = new Mapboxgl.Map({
       container: 'mapa-mapbox', // container id
-      style: 'mapbox://styles/mapbox/streets-v9',
+      style: 'mapbox://styles/juniormag2/cjfajg44u5qya2rnz1e3v19s3',
       center: [-46.576213, -23.4539413], // starting position
       zoom: 15.6 // starting zoom
     });

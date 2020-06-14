@@ -7,7 +7,7 @@ import {version} from '../../package.json';
 export const environment = {
   production: false,
   version: version,
-  mapBoxKey: 'pk.eyJ1IjoiYXVndXN0b2JvbmRhbmNhIiwiYSI6ImNrYmU1NmYycDBpYncyc253enA4dnlidnIifQ.20woFSBsekSkzHhCdtz1Pw'
+  mapBoxKey: 'pk.eyJ1IjoianVuaW9ybWFnMiIsImEiOiJja2E1OXRiN2UwZnMzM3BtYjJxYjRuajh3In0.LkgVWvR0Y1p3mbrho0GBAQ'
 };
 
 /*
