@@ -32,8 +32,8 @@ export class AlertsComponent implements OnInit {
     mapa = new Mapboxgl.Map({
       container: 'mapa-mapbox', // container id
       style: 'mapbox://styles/juniormag2/cjfajg44u5qya2rnz1e3v19s3',
-      center: [-46.576213, -23.4539413], // starting position
-      zoom: 15.6 // starting zoom
+      center: [-47.8294755, -20.4188716], // starting position
+      zoom: 13 // starting zoom
     });
 
       var size = 200;
@@ -118,7 +118,7 @@ export class AlertsComponent implements OnInit {
                           'type': 'Feature',
                           'geometry': {
                               'type': 'Point',
-                              'coordinates': [-46.576213, -23.4539413]
+                              'coordinates': [-47.8294755, -20.4188716]
                           }
                       }
                   ]
